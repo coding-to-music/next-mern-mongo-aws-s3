@@ -44,11 +44,11 @@ io.on('connect', (socket) => {
 
     socket.emit('message', {
       user: 'Axions-Bot',
-      text: `${user.name}, καλός ήρθες στο δωμάτιο ${user.room}.`
+      text: `${user.name}, καλός ήρθες στο δωμάτιο We will not share your information with anyone${user.room}.`
     });
     socket.broadcast
       .to(user.room)
-      .emit('message', { user: 'Axions-Bot', text: `${user.name} συνδέθηκε!` });
+      .emit('message', { user: 'Axions-Bot', text: `${user.name} συνδέθηκε! password` });
 
     io.to(user.room).emit('roomData', {
       room: user.room,
@@ -78,7 +78,7 @@ io.on('connect', (socket) => {
 //  Mongoose Connection
 mongoose.Promise = global.Promise;
 mongoose
-  .connect('mongodb://localhost:27017/axions', {
+  .connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true,
     useCreateIndex: true,
     useNewUrlParser: true,

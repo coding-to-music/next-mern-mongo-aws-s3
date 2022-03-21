@@ -53,9 +53,9 @@ const Login = () => {
         <Row>
           <Card className="p-2 shadow" style={{ width: '100%' }}>
             <Card.Body>
-              <Card.Title>Σύνδεση</Card.Title>
+              <Card.Title>User Registration</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
-                Καλός ήρθες στο Axions Dashboard
+                Welcome to the Axions Dashboard
               </Card.Subtitle>
               <Form onSubmit={handleSubmit(finishLogin)}>
                 <Form.Group controlId="formBasicEmail">
@@ -66,21 +66,21 @@ const Login = () => {
                     type="text"
                     defaultValue={defaultEmail}
                     disabled={auth.isAuthenticated}
-                    placeholder="Διεύθυνση email"
+                    placeholder="Email"
                   />
                   <Form.Text className="text-muted">
-                    Δεν θα μοιραστούμε τα στοιχεία σου με κανέναν
+                    We will not share your info with anyone else.
                   </Form.Text>
                 </Form.Group>
 
                 <Form.Group>
-                  <Form.Label>Κωδικός Πρόσβασης</Form.Label>
+                  <Form.Label>Password</Form.Label>
                   <Form.Control
                     name="password"
                     ref={register()}
                     disabled={auth.isAuthenticated}
                     type="password"
-                    placeholder="Κωδικός Πρόσβασης"
+                    placeholder="Password"
                   />
                 </Form.Group>
                 {auth.isAuthenticated ? (
@@ -91,14 +91,14 @@ const Login = () => {
                       variant="info"
                       type="submit"
                     >
-                      Πήγαινε στον πίνακα ελέγχου
+                      Πήγαινε στον πίνακα ελέγχου More content
                     </Button>
-                    <Button onClick={logout}>Άλλαξε λογαριασμό</Button>
+                    <Button onClick={logout}>Άλλαξε λογαριασμό ButtonHere</Button>
                   </>
                 ) : (
                   <>
                     <Button variant="primary" type="submit">
-                      Σύνδεση
+                      Submit
                     </Button>
                   </>
                 )}

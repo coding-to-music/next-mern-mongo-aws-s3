@@ -17,14 +17,14 @@ const Login = () => {
           {auth.isAuthenticated ? (
             <Card>
               <Card.Header>
-                <h5>Σύνδεση</h5>
+                <h5>Σύνδεση Card Header</h5>
               </Card.Header>
-              <Card.Body>Είστε συνδεδεμένος</Card.Body>
+              <Card.Body>Card Body Είστε συνδεδεμένος</Card.Body>
             </Card>
           ) : (
             <Card>
               <Card.Header>
-                <h5>Σύνδεση</h5>
+                <h5>Σύνδεση Card Header2</h5>
               </Card.Header>
               <Card.Body>
                 <LoginForm />
@@ -32,8 +32,8 @@ const Login = () => {
               {auth.isError ? (
                 <Card.Footer>
                   <Alert variant="danger" dismissible>
-                    <Alert.Heading>Λάθος κωδικός πρόσβασης ή email</Alert.Heading>
-                    <p>Πληκτρολόγησε ξανα τον κωδικό σου</p>
+                    <Alert.Heading>Alert1 Λάθος κωδικός πρόσβασης ή email</Alert.Heading>
+                    <p>Alert Text2 Πληκτρολόγησε ξανα τον κωδικό σου</p>
                   </Alert>
                 </Card.Footer>
               ) : null}

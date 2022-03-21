@@ -29,15 +29,15 @@ const Welcome = () => {
       <Card className="shadow-sm" style={{ width: '100% ' }}>
         <Card.Body>
           <Card.Title>
-            Καλός ήρθες
+            Καλός ήρθες Card Title
             <span className="pl-1">{user?.name}</span>
           </Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
-            Δες τις τελευταίες ενημερώσεις και τους καινούριους σου πελάτες
+            Subtitle Δες τις τελευταίες ενημερώσεις και τους καινούριους σου πελάτες
           </Card.Subtitle>
 
-          <Card.Link href="/dashboard/courses">Σειρές Μαθημάτων</Card.Link>
-          <Card.Link href="/dashboard/customers">Πελάτες</Card.Link>
+          <Card.Link href="/dashboard/courses">Σειρές Μαθημάτων Courses</Card.Link>
+          <Card.Link href="/dashboard/customers">Πελάτες Customers</Card.Link>
         </Card.Body>
       </Card>
     </>

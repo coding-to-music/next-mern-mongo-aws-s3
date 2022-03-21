@@ -1,11 +1,16 @@
 # AxionsBeta
 
-Axions is an online platform for people who want to create online course and sell the to the public. 
+https://github.com/AkisKourouklis/Axions
+
+By Sotiris Kourouklis https://github.com/AkisKourouklis
+
+Axions is an online platform for people who want to create online course and sell the to the public.
 From the dashboard you can create edit or delete courses. Each course has a name a description videos a much more.
 
 For the creation of this online platform it took me around 2 months.
 
 The technologies I use are:
+
 1. Next.js
 1. MongoDB
 1. AWS s3
@@ -20,3 +25,29 @@ You can use the code I provide to your own projects so you don't write everythin
 6. Search, pagination and filtering i working.
 
 The project sure has a lot of mistakes but is a good start for young developers to kickstart their projects and don't wast endless hours finding the perfect code.
+
+## Installation
+
+```java
+cd api
+
+npm install
+
+npm run start
+```
+
+```java
+cd front
+
+npm install
+
+npm run dev
+```
+
+```java
+cd admin
+
+npm install
+
+npm run dev
+```
