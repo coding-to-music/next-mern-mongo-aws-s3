@@ -51,3 +51,7 @@ npm install
 
 npm run dev
 ```
+
+The submit button does not work.
+
+No message is shown when you submit the form.
